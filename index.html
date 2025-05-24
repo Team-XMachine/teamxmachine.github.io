@@ -10,14 +10,19 @@
     <title>XMachine FTC</title>
 </head>
 <body>
+    <!-- TELA DE INTRODUÇÃO -->
     <div id="intro-screen">
         <img src="./assets/images/xmachine.svg" alt="XMachine Logo" class="intro-logo">
     </div>
+
+    <!-- LOADER -->
     <div id="loader-wrapper">
         <div class="loader"></div>
     </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
     <div id="main-content">
-    <div class="family">
+        <!-- NAVBAR -->
         <div class="container">
             <ul>
                 <li>
@@ -31,12 +36,137 @@
                 <li><a href="./pages/contact.html" onclick="showLoader()">Contato</a></li>
                 <li><a href="./pages/about.html" onclick="showLoader()">Quem Somos</a></li>
             </ul>
+        </div> <!-- FECHAMENTO CORRETO DO NAV CONTAINER -->
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="overlay">
+                <h1 class="hero-title">XMachine</h1>
+                <p id="rotating-text" class="rotating-text"></p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="./assets/images/instagram.svg"/>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank">
+                        <img src="./assets/images/tiktok.svg"/>
+                    </a>
+                    <a href="https://youtube.com" target="_blank">
+                        <img src="./assets/images/youtube.svg"/>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSÃO -->
+        <section class="missao">
+            <h2>Nossa Missão</h2>
+            <p>Inspirar jovens por meio da robótica, promovendo educação, tecnologia e colaboração em cada desafio.</p>
+        </section>
+
+        <!-- CONQUISTAS -->
+        <section class="conquistas">
+            <h2>Nossas Conquistas</h2>
+            <div class="cards">
+                <div class="card" id="fm">🌍 Finalista Mundial do Robot To The Rescue</div>
+                <div class="card" id="inovate2">💡 Prêmio Inovação | 9° Congresso</div>
+                <div class="card" id="control">🎮 Prêmio Controle | Nacional</div>
+                <div class="card" id="inovate">💡 Prêmio Inovação | Nacional</div>
+            </div>
+        </section>
+
+        <!-- DEPOIMENTOS -->
+        <section class="depoimentos-carousel">
+  <h2>Levando Inspiração</h2>
+  <div class="carousel-container">
+    <button class="nav prev">&#10094;</button>
+    <div class="carousel">
+      <div class="slides">
+        <div class="slide">
+          <blockquote>
+            "A visita da XMachine me inspirou a ser engenheiro!"
+            <footer>– Han Solo, 11 anos</footer>
+          </blockquote>
         </div>
+        <div class="slide">
+          <blockquote>
+            "Nunca imaginei que robótica pudesse ser tão divertida!"
+            <footer>– Padmé Amidala, 14 anos</footer>
+          </blockquote>
+        </div>
+        <div class="slide">
+          <blockquote>
+            "Agora sei que posso construir meu próprio droide."
+            <footer>– Anakin Skywalker, 13 anos</footer>
+          </blockquote>
+        </div>
+        <div class="slide">
+          <blockquote>
+            "A programação é como usar a Força — poderosa e precisa."
+            <footer>– Luke Skywalker, 15 anos</footer>
+          </blockquote>
+        </div>
+        <div class="slide">
+          <blockquote>
+            "Conhecer a XMachine foi melhor que voar no Millennium Falcon!"
+            <footer>– Chewbacca, 12 anos</footer>
+          </blockquote>
+        </div>
+        <div class="slide">
+          <blockquote>
+            "O controle do robô é mais difícil que pilotar um X-Wing!"
+            <footer>– Poe Dameron, 13 anos</footer>
+          </blockquote>
+        </div>
+        <div class="slide">
+          <blockquote>
+            "Sou o pior personagem de Star Wars!"
+            <footer>– Rey, 14 anos</footer>
+          </blockquote>
+        </div>
+        <div class="slide">
+          <blockquote>
+            "Nunca subestime o poder de um motor brushless."
+            <footer>– Darth Vader, 16 anos</footer>
+          </blockquote>
+        </div>
+        <div class="slide">
+          <blockquote>
+            "Foi como liderar um esquadrão rebelde... mas com sensores!"
+            <footer>– Leia Organa, 12 anos</footer>
+          </blockquote>
+        </div>
+        <div class="slide">
+          <blockquote>
+            "Eu sou um com o código. O código está comigo."
+            <footer>– Chirrut Îmwe, 15 anos</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <button class="nav next">&#10095;</button>
+  </div>
+</section>
+
+
+        <!-- VÍDEO -->
+        <section class="video">
+            <h2>Assista nosso Podcast</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/RitVAt0LkHc" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- PATROCINADOR -->
+        <section id="patrocinio" class="patrocinio">
+            <h2>Quer nos apoiar?</h2>
+            <p>Junte-se a nós e ajude a transformar o futuro da educação e tecnologia.</p>
+            <a class="cta-button" href="mailto:teamxmachine@gmail.com">Seja um Patrocinador</a>
+        </section>
     </div>
 
-    <h1>BTS</h1>
-</div>
-<script src="./js/intro.js"></script>
-<script src="./js/loader.js"></script>
+    <!-- SCRIPTS -->
+    <script src="./js/intro.js"></script>
+    <script src="./js/loader.js"></script>
+    <script src="./js/home.js"></script>
 </body>
 </html>
