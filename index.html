@@ -1,23 +1,42 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="./css/home.css"></link>
-        <link rel="icon" type="image/x-icon" href="./assets/images/xmachine.svg">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>XMachine FTC</title>
-    </head>
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/xmachine.svg" />
 
+    <title>XMachine FTC</title>
+</head>
+<body>
+    <div id="intro-screen">
+        <img src="./assets/images/xmachine.svg" alt="XMachine Logo" class="intro-logo">
+    </div>
+    <div id="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <div id="main-content">
     <div class="family">
         <div class="container">
             <ul>
-                <li><img src="./assets/images/xlogo.svg" class="active" href="#home"></img></li>
-                <li><a href="#team">Nossa Equipe</a></li>
-                <li><a href="#sponsors">Patrocinadores</a></li>
-                <li><a href="#events">Eventos</a></li>
-                <li><a href="#contact">Contato</a></li>
-                <li><a href="#about">Quem Somos</a></li>
+                <li>
+                    <a class="logo" href="#home">
+                        <img src="./assets/images/xlogo.svg" class="active" alt="XMachine Logo" />
+                    </a>
+                </li>
+                <li><a href="./pages/team.html" onclick="showLoader()">Nossa Equipe</a></li>
+                <li><a href="./pages/sponsors.html" onclick="showLoader()">Patrocinadores</a></li>
+                <li><a href="./pages/events.html" onclick="showLoader()">Eventos</a></li>
+                <li><a href="./pages/contact.html" onclick="showLoader()">Contato</a></li>
+                <li><a href="./pages/about.html" onclick="showLoader()">Quem Somos</a></li>
             </ul>
         </div>
     </div>
+
     <h1>BTS</h1>
+</div>
+<script src="./js/intro.js"></script>
+<script src="./js/loader.js"></script>
+</body>
 </html>
