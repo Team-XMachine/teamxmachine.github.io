@@ -1,0 +1,39 @@
+body {
+    background: url("../assets/images/17801.svg");
+    background-repeat:round;
+    background-color: black;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 10px;
+    align-items: start;
+}
+
+#title h2 {
+    color: white;
+}
+
+#who {
+    font-size: 350%;
+    background-color: transparent;
+}
+
+#weare {
+    font-size: 450%;
+    background-color: blue;
+}
+
+.text-container {
+    margin: 0;
+    left: 0;
+    width: 65%;
+}
+
+.text {
+    margin: 0;
+    text-align: justify;
+    font-size: 120%;
+}
