@@ -1,0 +1,40 @@
+body {
+    background: url("../assets/images/17801.svg");
+    background-repeat: round;
+    background-color: black;
+}
+
+.our-team h2 {
+    font-size: 250%;
+    background-color: blue;
+}
+
+.member {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: blue;
+    padding: 1rem 0.5rem;
+    border-radius: 35px;
+    max-width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.member:hover {
+    transform: translateY(-10px);
+}
+
+.member img {
+    border-radius: 50%;
+}
+
+.description {
+    text-align: justify;
+}
+
+.team-members {    
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 15px;
+}
